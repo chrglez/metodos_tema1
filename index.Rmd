@@ -616,7 +616,7 @@ class: inverse,center,middle
 
 ## 5. Rango de una matriz
 
-> Dada una matriz $A_{m\times n}$, se denomina **rango** de $A$, rango($A$), al número máximo de líneas (filas o columnas) linealemente independientes. Equivalentemente, rango($A$) es el orden del mayor determinante no nulo en $A$
+> Dada una matriz $A_{m\times n}$, se denomina **rango** de $A$, $\mbox{rango}(A)$, al número máximo de líneas (filas o columnas) linealemente independientes. Equivalentemente, $\mbox{rango}(A)$ es el orden del mayor determinante no nulo en $A$
 
 - $\mbox{rango}(A_{m\times n})\leq\min{(m,n)}$
 
