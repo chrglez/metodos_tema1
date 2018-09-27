@@ -417,9 +417,9 @@ Dados `\(X,Y\in\mathbb{R}^n\)` se definen los siguientes productos
 
 - Un vector `\(Y\)` se dice que es **combinación lineal** del conjunto de vectores `\(\left\{X_1,X_2,\ldots,X_k\right\}\in\mathbb{R}^n\)` si podemos encontrar `\(\alpha_1,\ldots,\alpha_k\in\mathbb{R}\)` tal que
 `$$Y=\alpha_1X_1+\cdots+\alpha_kX_k$$`
-- Un conjuntos de  vecores `\(\left\{X_1,X_2,\ldots,X_k\right\}\in\mathbb{R}^n\)` se dice que es **linealmente dependiente** o forma un sistema ligado si y solo si al menos unos de los vectores se puede formar como combinación lineal del resto
+- Un conjuntos de  vectores `\(\left\{X_1,X_2,\ldots,X_k\right\}\in\mathbb{R}^n\)` se dice que es **linealmente dependiente** o forma un sistema ligado si y solo si al menos unos de los vectores se puede formar como combinación lineal del resto
 
-- Un conjuntos de  vecores `\(\left\{X_1,X_2,\ldots,X_k\right\}\in\mathbb{R}^n\)` se dice que es **linealmente independiente** o forma un sistema libre si y solo si no es un sistema linealmente dependiente, es decir, ninguno de los vectores se puede formar como combinación lineal del resto
+- Un conjuntos de  vectores `\(\left\{X_1,X_2,\ldots,X_k\right\}\in\mathbb{R}^n\)` se dice que es **linealmente independiente** o forma un sistema libre si y solo si no es un sistema linealmente dependiente, es decir, ninguno de los vectores se puede formar como combinación lineal del resto
 ---
 
 class:  inverse, center, middle
@@ -435,7 +435,7 @@ class:  inverse, center, middle
 
 - Si `\(A\in M_{1\times 1}\Longrightarrow |A|=A\)`
 
-- Si `\(A\in M_{2\times 2}\Longrightarrow |A|=\begin{vmatrix}a_{11}&amp;a_{21}\\a_{12}&amp;a_{22}\end{vmatrix}=a_{11}a_{22}-a_{21}a_{12}\)`
+- Si `\(A\in M_{2\times 2}\Longrightarrow |A|=\begin{vmatrix}a_{11}&amp;a_{12}\\a_{21}&amp;a_{22}\end{vmatrix}=a_{11}a_{22}-a_{12}a_{21}\)`
 
 - Si `\(A\in M_{3\times 3}\)` se aplica la *regla de Sarrus*
 
@@ -446,31 +446,31 @@ class:  inverse, center, middle
 
 `$$\begin{array}{ccc}
 \begin{array}{c}
-\begin{vmatrix}\color{green}{\mathbf{a_{11}}}&amp;a_{21}&amp;a_{31}\\a_{21}&amp;\color{green}{\mathbf{a_{22}}}&amp;a_{23}\\a_{31}&amp;a_{32}&amp;\color{green}{\mathbf{a_{33}}}\end{vmatrix}\\
+\begin{vmatrix}\color{green}{\mathbf{a_{11}}}&amp;a_{12}&amp;a_{13}\\a_{21}&amp;\color{green}{\mathbf{a_{22}}}&amp;a_{23}\\a_{31}&amp;a_{32}&amp;\color{green}{\mathbf{a_{33}}}\end{vmatrix}\\
 \begin{matrix}a_{11}&amp;a_{12}&amp;a_{13}\\a_{21}&amp;a_{22}&amp;a_{23}\end{matrix}
 \end{array}&amp;
 \begin{array}{c}
-\begin{vmatrix}a_{11}&amp;a_{21}&amp;a_{31}\\\color{green}{\mathbf{a_{21}}}&amp;a_{21}&amp;a_{23}\\a_{31}&amp;\color{green}{\mathbf{a_{32}}}&amp;a_{33}\end{vmatrix}\\
+\begin{vmatrix}a_{11}&amp;a_{12}&amp;a_{13}\\\color{green}{\mathbf{a_{21}}}&amp;a_{22}&amp;a_{23}\\a_{31}&amp;\color{green}{\mathbf{a_{32}}}&amp;a_{33}\end{vmatrix}\\
 \begin{matrix}a_{11}&amp;a_{12}&amp;\color{green}{\mathbf{a_{13}}}\\a_{21}&amp;a_{22}&amp;a_{23}\end{matrix}
 \end{array}&amp;
 \begin{array}{c}
-\begin{vmatrix}a_{11}&amp;a_{21}&amp;a_{31}\\a_{21}&amp;a_{22}&amp;a_{23}\\\color{green}{\mathbf{a_{31}}}&amp;a_{32}&amp;a_{33}\end{vmatrix}\\
+\begin{vmatrix}a_{11}&amp;a_{12}&amp;a_{13}\\a_{21}&amp;a_{22}&amp;a_{23}\\\color{green}{\mathbf{a_{31}}}&amp;a_{32}&amp;a_{33}\end{vmatrix}\\
 \begin{matrix}a_{11}&amp;\color{green}{\mathbf{a_{12}}}&amp;a_{13}\\a_{21}&amp;a_{22}&amp;\color{green}{\mathbf{a_{23}}}\end{matrix}
 \end{array}\\
 \color{green}{\mathbf{+a_{11}a_{22}a_{33}}}&amp;\color{green}{\mathbf{+a_{21}a_{32}a_{13}}}&amp;\color{green}{\mathbf{+a_{31}a_{12}a_{23}}}\\&amp;&amp;\\
 \begin{array}{c}
-\begin{vmatrix}a_{11}&amp;a_{21}&amp;\color{red}{\mathbf{a_{11}}}\\a_{21}&amp;\color{red}{\mathbf{a_{22}}}&amp;a_{23}\\\color{red}{\mathbf{a_{31}}}&amp;a_{32}&amp;a_{33}\end{vmatrix}\\
+\begin{vmatrix}a_{11}&amp;a_{12}&amp;\color{red}{\mathbf{a_{13}}}\\a_{21}&amp;\color{red}{\mathbf{a_{22}}}&amp;a_{23}\\\color{red}{\mathbf{a_{31}}}&amp;a_{32}&amp;a_{33}\end{vmatrix}\\
 \begin{matrix}a_{11}&amp;a_{12}&amp;a_{13}\\a_{21}&amp;a_{22}&amp;a_{23}\end{matrix}
 \end{array}&amp;
 \begin{array}{c}
-\begin{vmatrix}a_{11}&amp;a_{21}&amp;a_{31}\\a_{21}&amp;a_{22}&amp;\color{red}{\mathbf{a_{23}}}&amp;\\a_{31}&amp;\color{red}{\mathbf{a_{32}}}&amp;a_{33}\end{vmatrix}\\
-\begin{matrix}\color{red}{\mathbf{a_{11}}}&amp;a_{12}&amp;a_{13}\\a_{31}&amp;a_{32}&amp;a_{33}\end{matrix}
+\begin{vmatrix}a_{11}&amp;a_{12}&amp;a_{13}\\a_{21}&amp;a_{22}&amp;\color{red}{\mathbf{a_{23}}}&amp;\\a_{31}&amp;\color{red}{\mathbf{a_{32}}}&amp;a_{33}\end{vmatrix}\\
+\begin{matrix}\color{red}{\mathbf{a_{11}}}&amp;a_{12}&amp;a_{13}\\a_{21}&amp;a_{22}&amp;a_{23}\end{matrix}
 \end{array}&amp;
 \begin{array}{c}
-\begin{vmatrix}a_{11}&amp;a_{21}&amp;a_{31}\\a_{21}&amp;a_{22}&amp;a_{23}\\a_{31}&amp;a_{32}&amp;\color{red}{\mathbf{a_{33}}}\end{vmatrix}\\
-\begin{matrix}a_{21}&amp;\color{red}{\mathbf{a_{22}}}&amp;a_{23}\\\color{red}{\mathbf{a_{31}}}&amp;a_{32}&amp;a_{33}\end{matrix}
+\begin{vmatrix}a_{11}&amp;a_{12}&amp;a_{13}\\a_{21}&amp;a_{22}&amp;a_{23}\\a_{31}&amp;a_{32}&amp;\color{red}{\mathbf{a_{33}}}\end{vmatrix}\\
+\begin{matrix}a_{11}&amp;\color{red}{\mathbf{a_{12}}}&amp;a_{13}\\\color{red}{\mathbf{a_{21}}}&amp;a_{22}&amp;a_{23}\end{matrix}
 \end{array}\\
-\color{red}{\mathbf{-a_{31}a_{22}a_{31}}}&amp;\color{red}{\mathbf{-a_{23}a_{32}a_{11}}}&amp;\color{red}{\mathbf{-a_{33}a_{12}a_{21}}}\end{array}$$`
+\color{red}{\mathbf{-a_{13}a_{22}a_{31}}}&amp;\color{red}{\mathbf{-a_{23}a_{32}a_{11}}}&amp;\color{red}{\mathbf{-a_{33}a_{12}a_{21}}}\end{array}$$`
 
 ---
 
@@ -498,7 +498,7 @@ Dada una matriz cuadrada, `\(A_{n\times n}=(a_{ij})_{\begin{array}{c}i=1,\ldots 
 
 1. `\(|A|=|A'|\)`
 
-2. `\(|AB|=|A||B|\)`
+2. `\(A,B\in M_n:\quad |AB|=|A||B|\)`
 
 3. Si todos los emelentos de una línea (fila o columna) contienen un factor común, éste puede salir fuera del determinante.
 
@@ -585,8 +585,8 @@ Resolviendo la eciacón `\(\lambda^2-2\lambda-3=0\)` se obtienen las soluciones 
 .blue[Ejemplo] Calcular los valores propios de la matriz `\(A=\begin{bmatrix}0&amp;-1&amp;0\\0&amp;1&amp;2\\1&amp;1&amp;-1\end{bmatrix}\)`
 
 Planteamos la ecuación característica:
-`$$p\lambda (A)=\left|\begin{bmatrix}0&amp;-1&amp;0\\0&amp;1&amp;2\\1&amp;1&amp;-1\end{bmatrix}-\lambda \begin{bmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{bmatrix}\right|=\\=\begin{vmatrix}-\lambda&amp;-1&amp;0\\0&amp;1-\lambda&amp;2\\1&amp;1&amp;-1-\lambda\end{vmatrix}=\lambda^3+3\lambda-2$$`
-Resolviendo la eciacón `\(\lambda^3+3\lambda-2=0\)` se obtienen las soluciones `\(\lambda_1=-1\)` (multiplicidad algebraica 1) y `\(\lambda_2=1\)` (multiplicidad algebraica 2), siendo estos los tres valores propios de A
+`$$p\lambda (A)=\left|\begin{bmatrix}0&amp;-1&amp;0\\0&amp;1&amp;2\\1&amp;1&amp;-1\end{bmatrix}-\lambda \begin{bmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{bmatrix}\right|=\\=\begin{vmatrix}-\lambda&amp;-1&amp;0\\0&amp;1-\lambda&amp;2\\1&amp;1&amp;-1-\lambda\end{vmatrix}=-\lambda^3+3\lambda-2$$`
+Resolviendo la ecuación `\(-\lambda^3+3\lambda-2=0\)` se obtienen las soluciones `\(\lambda_1=-2\)` (multiplicidad algebraica 1) y `\(\lambda_2=1\)` (multiplicidad algebraica 2), siendo estos los tres valores propios de A
 
 ---
 
@@ -631,7 +631,7 @@ class: inverse,center,middle
 
 &gt; Dada una matriz `\(A_{m\times n}\)`, se denomina **rango** de `\(A\)`, rango($A$), al número máximo de líneas (filas o columnas) linealemente independientes. Equivalentemente, rango($A$) es el orden del mayor determinante no nulo en `\(A\)`
 
-- `\(\mbox{rango}(A_{m\times n})=\min{(m,n)}\)`
+- `\(\mbox{rango}(A_{m\times n})\leq\min{(m,n)}\)`
 
 - `\(\mbox{rango}(A_{m\times n})=r\Longleftrightarrow A\)` contiene `\(r\)` líneas (filas o columnas) linealmente independientes `\(\Longleftrightarrow\)`  el resto de líneas serán combinación lineal de las `\(r\)` líneas restantes `\(\Longleftrightarrow\)` cualquier determinante `\(r+1\)` es 0.
 
@@ -681,7 +681,7 @@ class: inverse,center,middle
 
 - Al ser este determiante `\(2\times 2\)` distinto de 0, orlamos:
 
-`$$\begin{vmatrix}\mathbf{-3}&amp;\mathbf{1}&amp;0\\\mathbf{2}&amp;\mathbf{-1}&amp;2\\4&amp;2&amp;0\end{vmatrix}=-4\neq 0\Longrightarrow \mbox{rango}(A)\geq 3$$`
+`$$\begin{vmatrix}\mathbf{-3}&amp;\mathbf{1}&amp;0\\\mathbf{2}&amp;\mathbf{-1}&amp;2\\4&amp;2&amp;0\end{vmatrix}=20\neq 0\Longrightarrow \mbox{rango}(A)\geq 3$$`
 
 ---
 
@@ -689,7 +689,7 @@ class: inverse,center,middle
 
 - A partir del determinante no nulo anterior `\(\begin{vmatrix}-3&amp;1&amp;0\\2&amp;-1&amp;2\\4&amp;2&amp;0\end{vmatrix}=-4\neq 0\)` volvemos a orlar:
 
-`$$\begin{vmatrix}\mathbf{-3}&amp;\mathbf{1}&amp;\mathbf{0}&amp;1\\\mathbf{2}&amp;\mathbf{-1}&amp;\mathbf{2}&amp;1\\\mathbf{4}&amp;\mathbf{2}&amp;\mathbf{0}&amp;0\\0&amp;2&amp;0&amp;2\end{vmatrix}=-24\neq0\Longrightarrow \mbox{rango}(A)=4$$`
+`$$\begin{vmatrix}\mathbf{-3}&amp;\mathbf{1}&amp;\mathbf{0}&amp;1\\\mathbf{2}&amp;\mathbf{-1}&amp;\mathbf{2}&amp;1\\\mathbf{4}&amp;\mathbf{2}&amp;\mathbf{0}&amp;0\\0&amp;2&amp;0&amp;2\end{vmatrix}=24\neq0\Longrightarrow \mbox{rango}(A)=4$$`
 
 ---
 
@@ -699,7 +699,7 @@ class: inverse,center,middle
 
 - `\(1\leq\mbox{rango}(A)\leq 4\)`.
 
-- `\(\begin{vmatrix}2&amp;3\\1&amp;0\end{vmatrix}=-31\neq 0\Longrightarrow\mbox{rango}(A)\geq 2\)`.
+- `\(\begin{vmatrix}2&amp;3\\1&amp;0\end{vmatrix}=-3\neq 0\Longrightarrow\mbox{rango}(A)\geq 2\)`.
 
 - Al ser este determiante `\(2\times 2\)` distinto de 0, orlamos:
 
