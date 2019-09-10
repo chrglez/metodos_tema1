@@ -2,7 +2,7 @@
 title: "Métodos Cuantitativos"
 subtitle: "Tema 1: Matrices determinantes y vectores"
 author: "Christian González"
-date: "Curso 18-19"
+date: "Curso 19/20"
 output:
   xaringan::moon_reader:
     mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
